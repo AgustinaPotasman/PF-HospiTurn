@@ -1,10 +1,10 @@
 import Boton from '../Boton/Boton';
 import './form.css';
 
-function form({especialidad, sintomas}) {
+function Form({crearTurno}) {
   
     return (
-        <form>
+        <form onSubmit={crearTurno}>
             <div class="mb-3">
                 <select id="especialidad" class="form-select">
                     <option>Pediatria</option>
@@ -16,7 +16,7 @@ function form({especialidad, sintomas}) {
                     <option>Psiquiatria</option>
             </select>
             <div class="mb-3">
-                <label for="sintomas"  class="form-label">Ingrese sus sintomas</label>
+                <label for="sintomas" class="form-label">Ingrese sus sintomas</label>
             </div>
             </div>
                 <Boton sendText={"Siguiente"}></Boton>
@@ -25,4 +25,4 @@ function form({especialidad, sintomas}) {
     );
 }
 
-export default form;
+export default Form;

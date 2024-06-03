@@ -1,7 +1,6 @@
-import alerta from '../components/Boton';
 import './alerta.css';
 
-function form({especialidad, sintomas}) {
+function alerta({especialidad, sintomas}) {
 
     return (
        <form>
