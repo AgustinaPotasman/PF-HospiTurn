@@ -1,14 +1,24 @@
+import React from 'react';
 import './alerta.css';
 
-function alerta({especialidad, sintomas}) {
-
+let respuesta
+function Alerta({ Aceptar, onRechazar }) {
     return (
-       <form>
-            <input type="submit" name="action" value="Aceptar" />
-            <input type="submit" name="action" value="Cancelar" />
-            
-       </form>
+        <div className="alerta-container">
+            <p>¿Seguro que quieres sacar turno?</p>
+            <div>
+                <button onClick={Aceptar}>Aceptar</button>
+                <button onClick={onRechazar}>Rechazar</button>
+            </div>
+        </div>
     );
 }
 
-export default alerta;
+if (alert== Aceptar){
+    respuesta = true
+}
+else{
+    respuesta = false
+}
+
+export default respuesta;
